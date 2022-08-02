@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+    <style>
+        /*CSS code*/
+        body {
+            padding: 40px;
+            color: black;
+            margin:auto;
+        }
+        .app {
+            background-color: blanchedalmond;
+            margin: auto;
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            padding: 10px;
+            box-shadow: 12px 12px 6px gray;
+            border: 2px solid rgb(128, 112, 83);
+            border-radius: 8px;
+        }
+        #name-input{
+            padding:0;
+        }
+
+        #msg{
+            display: flex;
+            flex-direction: column;
+            justify-items: left;
+            justify-content: left;
+            padding: 10px 0 0 0;
+        }
+
+        .name{
+            padding: 0;
+            margin: 0;
+        }
+
+        .name-msg{
+            padding:0 6px 0 6px;
+        }
+
+        #name-input{
+            color: black;
+            width: auto;
+            height: 38px;
+        }
+        button {
+            color: black;
+            background-color: rgb(252, 252, 252);
+            height: 42px;
+            border-radius: 6px;
+            border-color: whitesmoke;
+            width: 80px;
+            margin: 6px 0 0 0;
+            padding: 8px 0 8px 0;
+            
+        }
+        .user {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .bot{
+
+            margin: 0;
+            padding: 22px 0 0 0;
+        }
+
+        h2 {
+            padding: 20px 0 20px 0;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h2>Welcome</h2>
+        <p>What's Your Name?</p>
+        <p class="user">User Input 
+            <input id="name-input">
+            <button id="button-name" onclick="insert();">Send</button>
+        </p> 
+        
+        <div id="msg">
+            <div class="name">
+            Name:
+            </div> 
+
+            <div id="your-name" class="name-msg">
+            </div>
+
+            <div class="bot">Bot: </div>
+            <div id="boas-vindas">
+                 
+            </div>
+        </div>
+    
+    </div>
+    
+    <script>
+        
+        function insert(){
+            var btn = document.querySelector('button-name');
+            var inpt = document.querySelector("input");
+            var output = document.getElementById("your-name")
+            var reply = document.getElementById("boas-vindas");
+            output.innerHTML =  '<i style="padding: 0; margin: 0; display: inline-block;">' + inpt.value + "</i>";
+            reply.innerHTML = " Bem vinda " + inpt.value + "" 
+            console.log(inpt.value);
+            console.log(reply.value);
+            console.log(output.value);
+
+        }
+    </script>
+</body>
+</html>
