@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+    <title>WEB - HTML & User Input with Jasvascript</title>
     <style>
         /*CSS code*/
         body {
@@ -33,7 +33,7 @@
         }
 
         .name-msg{
-            padding:0 6px 0 6px;
+            padding:0;
         }
 
         #name-input{
@@ -100,7 +100,7 @@
             var output = document.getElementById("your-name")
             var reply = document.getElementById("boas-vindas");
             output.innerHTML =  '<i style="padding: 0; margin: 0; display: inline-block;">' + inpt.value + "</i>";
-            reply.innerHTML = " Bem vinda " + inpt.value + "" 
+            reply.innerHTML = " Bem vindo " + inpt.value + "" 
             console.log(inpt.value);
             console.log(reply.value);
             console.log(output.value);
