@@ -10,6 +10,8 @@ Criando um arquivo html para página de um site e código javascript.
 2. Desenvolvimento de Sites https://cursos.timtec.com.br/course/desenvolvimento-de-front-end/intro
 
 
+Abaixo código inicial do projeto
+
 ```html
 <!DOCTYPE html>
 <html>
